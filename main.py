@@ -175,6 +175,7 @@ def client_sign(bduss, tbs, fid, kw):
 
 
 def main():
+    ENV = os.getenv("BDUSS")
     if ('BDUSS' not in ENV):
         logger.error("未配置BDUSS")
         return
